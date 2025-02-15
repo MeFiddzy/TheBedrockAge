@@ -22,6 +22,7 @@ public class ModCreativeModeTab {
                         pOutput.accept(ModItems.UNREFINED_BEDROCK_INGOT.get());
                         pOutput.accept(ModItems.BEDROCK_POWDER.get());
                         pOutput.accept(ModBlocks.WEAK_BEDROCK.get());
+                        pOutput.accept(ModBlocks.OLD_BEDROCK.get());
                     })
                     .build());
 

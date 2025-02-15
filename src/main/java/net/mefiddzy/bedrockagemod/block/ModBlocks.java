@@ -2,10 +2,12 @@ package net.mefiddzy.bedrockagemod.block;
 
 import net.mefiddzy.bedrockagemod.BedrockAgeMod;
 import net.mefiddzy.bedrockagemod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +21,12 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, BedrockAgeMod.MOD_ID);
 
     public static final RegistryObject<Block> WEAK_BEDROCK = registerBlock("weak_bedrock",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).requiresCorrectToolForDrops().strength(16.0F, 50.0F)));
+
+    public static final RegistryObject<Block> OLD_BEDROCK = registerBlock("old_bedrock",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .requiresCorrectToolForDrops()
+                    .strength(13.0F, 30.0F), UniformInt.of(3, 6)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
