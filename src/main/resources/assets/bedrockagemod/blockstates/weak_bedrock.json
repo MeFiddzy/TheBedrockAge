@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bedrockagemod:block/weak_bedrock"
+    }
+  }
+}

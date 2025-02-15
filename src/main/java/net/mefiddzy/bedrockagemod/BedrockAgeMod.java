@@ -1,6 +1,7 @@
 package net.mefiddzy.bedrockagemod;
 
 import com.mojang.logging.LogUtils;
+import net.mefiddzy.bedrockagemod.block.ModBlocks;
 import net.mefiddzy.bedrockagemod.item.ModCreativeModeTab;
 import net.mefiddzy.bedrockagemod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,8 @@ public class BedrockAgeMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTab.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         ModItems.register(modEventBus);
 

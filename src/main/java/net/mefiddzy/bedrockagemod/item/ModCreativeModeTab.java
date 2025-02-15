@@ -1,6 +1,7 @@
 package net.mefiddzy.bedrockagemod.item;
 
 import net.mefiddzy.bedrockagemod.BedrockAgeMod;
+import net.mefiddzy.bedrockagemod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,7 @@ public class ModCreativeModeTab {
                         pOutput.accept(ModItems.BEDROCK_INGOT.get());
                         pOutput.accept(ModItems.UNREFINED_BEDROCK_INGOT.get());
                         pOutput.accept(ModItems.BEDROCK_POWDER.get());
+                        pOutput.accept(ModBlocks.WEAK_BEDROCK.get());
                     })
                     .build());
 

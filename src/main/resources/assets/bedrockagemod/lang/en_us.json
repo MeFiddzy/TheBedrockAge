@@ -2,5 +2,6 @@
   "item.bedrockagemod.bedrock_powder": "§6Bedrock Powder",
   "item.bedrockagemod.unrefined_bedrock_ingot": "§6Unrefined Bedrock Ingot",
   "item.bedrockagemod.bedrock_ingot": "§4Bedrock Ingot",
-  "creativetab.bedrock_age_tab": "Bedrock Age Tab"
+  "creativetab.bedrock_age_tab": "Bedrock Age Tab",
+  "block.bedrockagemod.weak_bedrock": "Weak Bedrock"
 }
