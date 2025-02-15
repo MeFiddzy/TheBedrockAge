@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bedrockagemod:weak_bedrock"
+    }
+  ],
+  "result": {
+    "item": "bedrockagemod:bedrock_powder",
+    "count": 9
+  }
+}
