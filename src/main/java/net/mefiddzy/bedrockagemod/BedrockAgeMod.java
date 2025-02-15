@@ -1,6 +1,8 @@
 package net.mefiddzy.bedrockagemod;
 
 import com.mojang.logging.LogUtils;
+import net.mefiddzy.bedrockagemod.item.ModCreativeModeTab;
+import net.mefiddzy.bedrockagemod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +29,9 @@ public class BedrockAgeMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTab.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -46,7 +51,6 @@ public class BedrockAgeMod
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        
     }
 
     @SubscribeEvent
