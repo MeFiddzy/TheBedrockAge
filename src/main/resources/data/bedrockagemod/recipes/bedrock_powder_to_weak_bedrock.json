@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bedrockagemod:bedrock_powder"
+    }
+  },
+  "result": {
+    "item": "bedrockagemod:weak_bedrock"
+  }
+}

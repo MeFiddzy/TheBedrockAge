@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  #",
+    " Db",
+    "D  "
+  ],
+  "key": {
+    "#": { "item": "bedrockagemod:old_bedrock_finder" },
+    "D": { "item": "minecraft:diamond" },
+    "b": { "item": "bedrockagemod:bedrock_ingot" }
+  },
+  "result": {
+    "item": "bedrockagemod:advanced_old_bedrock_finder",
+    "count": 1
+  }
+}

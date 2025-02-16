@@ -1,0 +1,13 @@
+{
+  "item.bedrockagemod.bedrock_powder": "§6Bedrock Powder",
+  "item.bedrockagemod.unrefined_bedrock_ingot": "§6Unrefined Bedrock Ingot",
+  "item.bedrockagemod.bedrock_ingot": "§4Bedrock Ingot",
+  "creativetab.bedrock_age_tab": "§6 §l The Bedrock Age",
+  "block.bedrockagemod.weak_bedrock": "Weak Bedrock",
+  "block.bedrockagemod.old_bedrock": "Old Bedrock",
+  "item.bedrockagemod.old_bedrock_finder": "Old Bedrock Finder",
+  "item.bedrockagemod.advanced_old_bedrock_finder": "Advanced Old Bedrock Finder",
+  "block.bedrockagemod.covered_bedrock": "Covered Bedrock",
+  "item.bedrockagemod.bedrock_apple": "Bedrock Apple",
+  "item.bedrockagemod.bedrock_soul": "Bedrock Soul"
+}
