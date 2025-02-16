@@ -1,6 +1,7 @@
 package net.mefiddzy.bedrockagemod.block;
 
 import net.mefiddzy.bedrockagemod.BedrockAgeMod;
+import net.mefiddzy.bedrockagemod.block.custom.BedrockBarrierBlock;
 import net.mefiddzy.bedrockagemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +24,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WEAK_BEDROCK = registerBlock("weak_bedrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).requiresCorrectToolForDrops().strength(16.0F, 50.0F)));
+
+    public static final RegistryObject<Block> COVERED_BEDROCK = registerBlock("covered_bedrock",
+            () -> new BedrockBarrierBlock(BlockBehaviour.Properties.copy(Blocks.TNT).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> OLD_BEDROCK = registerBlock("old_bedrock",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)

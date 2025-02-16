@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bedrockagemod:block/covered_bedrock"
+    }
+  }
+}
