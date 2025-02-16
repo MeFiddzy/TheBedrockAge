@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "bbb",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "bedrockagemod:bedrock_powder"
+    },
+    "b": {
+      "item": "bedrockagemod:bedrock_ingot"
+    },
+    "R": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "bedrockagemod:bedrock_soul",
+    "count": 1
+  }
+}

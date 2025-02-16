@@ -3,6 +3,7 @@ package net.mefiddzy.bedrockagemod.item;
 import net.mefiddzy.bedrockagemod.BedrockAgeMod;
 import net.mefiddzy.bedrockagemod.item.custom.AdvancedBedrockFinderItem;
 import net.mefiddzy.bedrockagemod.item.custom.BedrockFinderItem;
+import net.mefiddzy.bedrockagemod.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,6 +28,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> ADVANCED_OLD_BEDROCK_FINDER = ITEMS.register("advanced_old_bedrock_finder",
             () -> new AdvancedBedrockFinderItem(new Item.Properties().durability(500)));
+    public static final RegistryObject<Item> BEDROCK_APPLE = ITEMS.register("bedrock_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.BEDROCK_APPLE)));
+
+    public static final RegistryObject<Item> BEDROCK_SOUL = ITEMS.register("bedrock_soul",
+            () -> new FuelItem(new Item.Properties(), 10000));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

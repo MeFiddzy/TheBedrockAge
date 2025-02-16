@@ -26,6 +26,8 @@ public class ModCreativeModeTab {
                         pOutput.accept(ModItems.OLD_BEDROCK_FINDER.get());
                         pOutput.accept(ModItems.ADVANCED_OLD_BEDROCK_FINDER.get());
                         pOutput.accept(ModBlocks.COVERED_BEDROCK.get());
+                        pOutput.accept(ModItems.BEDROCK_APPLE.get());
+                        pOutput.accept(ModItems.BEDROCK_SOUL.get());
                     })
                     .build());
 

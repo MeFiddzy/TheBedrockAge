@@ -30,6 +30,15 @@
               "type": "minecraft:item",
               "functions": [
                 {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 9.0,
+                    "min": 3.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
                   "function": "minecraft:apply_bonus"
@@ -46,5 +55,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "bedrockagemod:blocks/old_bedrock"
+  "random_sequence": "bedrockagemod:blocks/bedrock_powder"
 }

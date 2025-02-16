@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bedrockagemod:weak_bedrock"
+  },
+  "result": {
+    "item": "bedrockagemod:unrefined_bedrock_ingot"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

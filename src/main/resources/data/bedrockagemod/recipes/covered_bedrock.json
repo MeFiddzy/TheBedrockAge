@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#B#",
+    "BbB",
+    "#B#"
+  ],
+  "key": {
+    "#": {
+      "item": "bedrockagemod:bedrock_powder"
+    },
+    "B": {
+      "item": "bedrockagemod:weak_bedrock"
+    },
+    "b": {
+      "item": "bedrockagemod:bedrock_ingot"
+    }
+  },
+  "result": {
+    "item": "bedrockagemod:covered_bedrock",
+    "count": 1
+  }
+}
